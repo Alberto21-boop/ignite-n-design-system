@@ -3,19 +3,33 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
+    "@storybook/addon-essentials": "^7.5.2",
+    "@storybook/addon-interactions": "^7.5.2",
+    "@storybook/addon-links": "^7.5.2",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.2",
     "@storybook/builder-vite": "^7.5.2",
+    "@storybook/cli": "^7.5.2",
+    "@storybook/react": "^7.5.2",
+    "@storybook/react-vite": "^7.5.2",
+    "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
     "@vitejs/plugin-react": "^4.1.0",
     "eslint": "^8.52.0",
+    "eslint-plugin-storybook": "^0.6.15",
     "react": "^18.2.0",
+    "storybook": "^7.5.2",
+    "storybook-builder-vite": "^0.1.23",
     "turbo": "^1.10.16",
     "typescript": "^5.2.2",
     "vite": "^4.5.0"
@@ -32,5 +46,10 @@
     "polished": "^4.2.2",
     "react-dom": "^18.2.0"
   },
-  "description": ""
+  "description": "",
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
 }
